@@ -32,20 +32,26 @@ public class Book {
     @JoinTable(name = "books_author",
     joinColumns = {@JoinColumn(name="book_id")},
     inverseJoinColumns = {@JoinColumn(name="author_id")})
-    private Set<Author> authors = new HashSet<Author>();
+    private Set<Author> authors = new HashSet<>();
 
     @ManyToMany(cascade = {CascadeType.ALL})
     @JoinTable(name = "books_categories",
             joinColumns = {@JoinColumn(name="book_id")},
             inverseJoinColumns = {@JoinColumn(name="category_id")})
-    private Set<Category> categories = new HashSet<Category>();
+    private Set<Category> categories = new HashSet<>();
 
     @ManyToMany(cascade = {CascadeType.ALL})
     @JoinTable(name = "books_publishers",
             joinColumns = {@JoinColumn(name="book_id")},
             inverseJoinColumns = {@JoinColumn(name="publisher_id")})
-    private Set<Publisher> publishers = new HashSet<Publisher>();
+    private Set<Publisher> publishers = new HashSet<>();
 
+
+    public Book(String isbn, String name, String description) {
+        this.isbn = isbn;
+        this.name = name;
+        this.description = description;
+    }
 
     public void addPublisher(Publisher publisher) {
         this.publishers.add(publisher);
