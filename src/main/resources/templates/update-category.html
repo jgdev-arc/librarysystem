@@ -17,21 +17,21 @@
 <div class="container my-2">
     <div class="card">
         <div class="card-body">
-            <form action="#" th:action="@{/update-category/{id}(id=${category.id})}" th:object="${category}" method="post">
+            <form th:action="@{/update-category/{id}(id=${category.id})}" th:object="${category}" method="post">
                 <div class="row">
-                    <div class="form-group col-md-8">
+                    <div class="col-md-8 form-group">
                         <label for="name" class="col-form-label">Category Name</label>
                         <input type="text" th:field="*{name}" class="form-control" id="name"
                                placeholder="Category Name"/>
                     </div>
-                    <div class="col-md-6">
-                        <input type="submit" class="btn btn-primary" value=" Submit ">
+                    <div class="col-md-4">
+                        <input type="submit" class="btn btn-primary" value="Submit">
                     </div>
-
                 </div>
             </form>
         </div>
     </div>
 </div>
 </body>
+
 </html>
