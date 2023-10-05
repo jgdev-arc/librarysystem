@@ -68,7 +68,9 @@ You can clone the repository or download the Zip file [here](https://github.com/
   
 Do Reach Out :
 
+  * [LinkedIn](https://www.linkedin.com/in/jgdev/)
   * [Twitter](https://twitter.com/jon_g_dev)
+
 
 
 # :scroll: License :scroll:
