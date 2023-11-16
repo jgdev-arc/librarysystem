@@ -9,9 +9,6 @@
 
 The Library System Application is a  full-stack Java/Spring Boot application designed to help you efficiently manage your collection of books, authors, publishers, and categories. Whether you're a book enthusiast, a librarian, or a bookshop owner, this application simplifies the process of organizing and tracking your literary assets. 
 
-<p align="center">
-  <img src="" alt="walkthrough">
-</p>
 
 # :camera_flash: **Features** :camera_flash:
 
